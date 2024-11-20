@@ -1,8 +1,9 @@
-# Note: For front-end automation only.
-# Place locator elements here. xpath format should be used.
+# Locatpr elements for the Greenhouse Log-in Page; xpath format is used.
 
 *** Variables ***
-# Sample page objects
-${loginPage_email_input}    xpath=//input[@name="email"]
-${loginPage_password_input}    xpath=//input[@name="password"]
-${loginPage_sign_in_btn}    xpath=//span[contains(text(), 'Log in')]/ancestor::button
+${loginPage_sign_in_btn}    xpath=//div[@role="button"]
+
+${google_email_input}    xpath=//input[@id="identifierId"]
+${google_password_input}    xpath=//input[@type="password"]
+${google_otp_input}    xpath=//input[@id="totpPin"]
+${google_next_btn}    xpath=//button/span[contains(., 'Next')]

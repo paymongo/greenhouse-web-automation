@@ -2,17 +2,11 @@
 # For front-end automation necessary imports should be placed in test case files
 
 *** Settings ***
-#Environment Variables
+# Environment Variables
 Resource    ../environment_variables.robot
 
-#Assertions
-Resource    resources/assertions/common.robot
+# Utilities
+Resource    ../resources/keywords/utilities/common.robot
 
-#DB Assertions
-Resource    resources/db_assertions/common.robot
-
-#Utilities
-Resource    resources/utilities/common.robot
-
-#Requests
-Resource    resources/requests/core.organizations.id-get/request.robot
+# Page Actions
+Resource    ../resources/keywords/page_actions/loginPageActions.robot

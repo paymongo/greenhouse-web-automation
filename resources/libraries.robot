@@ -1,6 +1,3 @@
-# Place relevant library packages here
-# Below are the commonly used library packages
-
 *** Settings ***
 Library    base64/base64code.py
 Library    BuiltIn
