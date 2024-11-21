@@ -11,6 +11,5 @@ Library    OperatingSystem
 Library    Process
 Library    requests
 Library    RequestsLibrary
-# Library    Screenshot
 Library    SeleniumLibrary    run_on_failure=Nothing
 Library    String
