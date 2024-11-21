@@ -82,4 +82,4 @@ go to greenhouse web login page
     start browser instance    ${${ENV}_GREENHOUSE_URL}
 
 go back to original window
-    Select Window
+    Switch Window

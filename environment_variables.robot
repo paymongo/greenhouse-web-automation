@@ -11,7 +11,7 @@ ${TEST_EMAIL}    eng.user@paymongo.com
 ${TEST_PASSWORD}    crypt:kk/TSt64n1cI8nCj4ygubvVgNGmmDZWXenM0mptDemTaqnk2yOA1xltGr8RN4J2U9w9qTBacQZyvX8xVCtZAc8y92w==
 
 # OTP
-${SECRET_KEY}    crypt:ei28+NGIPSqubRGiJNYnZovjxiFSxhIZaHG6G/Mw3ENq9TRf3B/BVFYyilCGyjAK7pkWz1GPrm3nBjfBoaw+91UuH3phlGQY4sMemXKRlzRz4z8uA/oH
+${SECRET_KEY}    crypt:XW55um9WPkx/z8jx4AGmS7N20+z8X+1F2e70eWoqvRu4c6Pbm+qodwkVwpQz5Mo/8v27igNkzriTzHwN6OW+MDnHR/rcyP8CbHfHlycRoS8=
 
 # WebDriver
 ${BROWSER}    firefox
