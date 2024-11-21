@@ -1,3 +1,6 @@
+*** Settings ***
+Resource    ../page_objects/loginPageObjects.robot
+
 *** Keywords ***
 a user is on the greenhouse web login page
     go to greenhouse web login page
@@ -8,7 +11,7 @@ sign-in button is clicked
 switch to google login window
     Switch Window    NEW
 
-valid login credentials are entered in the google form
+login credentials are entered in the google form
     [Arguments]    ${email}=${TEST_EMAIL}    ${password}=${TEST_PASSWORD}
     input text    ${google_email_input}    ${email}
     click element    ${google_next_btn}
@@ -26,5 +29,5 @@ login to greenhouse web
     a user is on the greenhouse web login page
     sign-in button is clicked
     switch to google login window
-    valid login credentials are entered in the google form    ${email}    ${password}
+    login credentials are entered in the google form    ${email}    ${password}
     go back to original window

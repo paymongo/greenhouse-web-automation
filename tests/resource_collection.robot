@@ -1,6 +1,3 @@
-# Note: For api automation only.
-# For front-end automation necessary imports should be placed in test case files
-
 *** Settings ***
 
 # Libraries
@@ -16,7 +13,7 @@ Resource    ../resources/keywords/utilities/common.robot
 Resource    ../resources/keywords/assertions/merchantsPage.robot
 
 # Page Actions
-Resource    ../resources/keywords/page_actions/loginPageActions.robot
+# Resource    ../resources/keywords/page_actions/loginPageActions.robot
 
 # Page Objects
-Resource    ../resources/keywords/page_objects/loginPageObjects.robot
+# Resource    ../resources/keywords/page_objects/loginPageObjects.robot
