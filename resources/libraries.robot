@@ -1,8 +1,5 @@
-# Place relevant library packages here
-# Below are the commonly used library packages
-
 *** Settings ***
-Library    base64/base64code.py
+Library    generate_otp/generate_otp.py
 Library    BuiltIn
 Library    Collections
 Library    CryptoLibrary    key_path=${CURDIR}/../resources/keys
@@ -14,6 +11,5 @@ Library    OperatingSystem
 Library    Process
 Library    requests
 Library    RequestsLibrary
-Library    Screenshot
 Library    SeleniumLibrary    run_on_failure=Nothing
 Library    String

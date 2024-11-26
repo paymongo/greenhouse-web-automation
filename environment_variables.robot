@@ -1,25 +1,22 @@
-# Note: Place reusable variables here, grouped by environment.
+*** Variables ***
 
-#Staging Environment
-${STAGING_CORE_HOST}    https://api.staging.paymongo.dev
+# STAGING
+${STAGING_GREENHOUSE_URL}    https://greenhouse.staging.paymongocorp.com
 
-#SuperUser Keys
-${STAGING_TEST_SUPERUSER_ENCR}    crypt:${${env}_TEST_SUPER}
-${STAGING_LIVE_SUPERUSER_ENCR}    crypt:${${env}_LIVE_SUPER}
+# UAT
+${UAT_GREENHOUSE_URL}    https://greenhouse.uat.paymongocorp.com
 
-# Database
-# ${STAGING_DB_HOST}    docker.for.mac.host.internal - connection inside docker via ssh tunnel
-${STAGING_DB_PASSWORD}    crypt:${DB_PASS}
+# Test Accounts
+${ONBOARDING_EMAIL}    eng.user@paymongo.com
+${ONBOARDING_PASSWORD}    crypt:kk/TSt64n1cI8nCj4ygubvVgNGmmDZWXenM0mptDemTaqnk2yOA1xltGr8RN4J2U9w9qTBacQZyvX8xVCtZAc8y92w==
 
-#UAT Environment
-${UAT_CORE_HOST}    https://api.uat.paymongo.dev
+# OTP
+${SECRET_KEY}    crypt:XW55um9WPkx/z8jx4AGmS7N20+z8X+1F2e70eWoqvRu4c6Pbm+qodwkVwpQz5Mo/8v27igNkzriTzHwN6OW+MDnHR/rcyP8CbHfHlycRoS8=
 
-# Database
-${UAT_DB_PASSWORD}    crypt:${DB_PASS}
+# WebDriver
+${BROWSER}    firefox
 
-#Airtable
-${AIRTABLE_API_KEY}    crypt:${AIRTABLE_PASS}
-
-#SuperUser Keys
-${UAT_TEST_SUPERUSER_ENCR}    crypt:${${env}_TEST_SUPER}
-${UAT_LIVE_SUPERUSER_ENCR}    crypt:${${env}_LIVE_SUPER}
+#Headful Browser
+${HEADFUL}    False
+${DISPLAY}    :99
+${xvfb_running}    ${None}
