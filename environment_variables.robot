@@ -8,7 +8,7 @@ ${UAT_GREENHOUSE_URL}    https://greenhouse.uat.paymongocorp.com
 
 # Test Accounts
 ${ONBOARDING_EMAIL}    eng.user@paymongo.com
-${ONBOARDING_PASSWORD}    crypt:kk/TSt64n1cI8nCj4ygubvVgNGmmDZWXenM0mptDemTaqnk2yOA1xltGr8RN4J2U9w9qTBacQZyvX8xVCtZAc8y92w==
+${ONBOARDING_PASSWORD}    crypt:p9mugezq7EayFoeXN4TM4jXHQy/96X+emnJdHp9G2lcc5qWffgZtJwsvo/s0gruUSMaeDIes42hvUCxJBUtiV/VSFA==
 
 # OTP
 ${SECRET_KEY}    crypt:XW55um9WPkx/z8jx4AGmS7N20+z8X+1F2e70eWoqvRu4c6Pbm+qodwkVwpQz5Mo/8v27igNkzriTzHwN6OW+MDnHR/rcyP8CbHfHlycRoS8=

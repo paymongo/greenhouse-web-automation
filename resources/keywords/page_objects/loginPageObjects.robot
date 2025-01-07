@@ -1,4 +1,4 @@
-# Locatpr elements for the Greenhouse Log-in Page; xpath format is used.
+# Locator elements for the Greenhouse Log-in Page; xpath format is used.
 
 *** Variables ***
 ${loginPage_sign_in_btn}    xpath=//div[@role="button"]
