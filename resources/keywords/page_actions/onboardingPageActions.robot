@@ -3,7 +3,8 @@ Resource    ../page_objects/onboardingPageObjects.robot
 Resource    ../utilities/onboardingPage.robot
 
 *** Keywords ***
-merchant ${merchant_id} is entered on the search bar
+merchant is entered on the search bar
+    [Arguments]    ${merchant_id}
     input text    ${onboarding_search_input}    ${merchant_id}
     press keys    ${onboarding_search_input}    ENTER
 

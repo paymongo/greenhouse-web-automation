@@ -6,7 +6,8 @@ user should be on greenhouse onboarding page
     wait until location contains    /merchants   10s    user is not on greenhouse onboarding page
     capture page screenshot
 
-merchant ${expected_merchant_id}'s details should be displayed
+merchant's details should be displayed
+    [Arguments]    ${expected_merchant_id}
     wait until element is visible    ${merchant_acct_summary_id}
     ${actual_merchant_id}=    Get Text    ${merchant_acct_summary_id}
     should be equal    ${expected_merchant_id}    ${actual_merchant_id}

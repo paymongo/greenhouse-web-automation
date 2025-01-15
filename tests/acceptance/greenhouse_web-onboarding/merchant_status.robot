@@ -10,8 +10,8 @@ Suite Teardown    end browser instance
 # Disable merchant
 Merchant status is changed to disabled WHEN TM code is M01 and note is not empty
     GIVEN user should be on greenhouse onboarding page
-    AND merchant ${${ENV}_TEST_MERCHANT_ID} is entered on the search bar
-    AND merchant ${${ENV}_TEST_MERCHANT_ID}'s details should be displayed
+    AND merchant is entered on the search bar    ${${ENV}_TEST_MERCHANT_ID}
+    AND merchant's details should be displayed    ${${ENV}_TEST_MERCHANT_ID}
     AND merchant status should be enabled
     WHEN merchant status is toggled    tm_code=M01    note=QA Web Automation Note.
     THEN merchant status should be disabled
