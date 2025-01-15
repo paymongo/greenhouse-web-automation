@@ -42,3 +42,16 @@ merchant status tm notes should be "${expected_notes}"
 merchant status disable modal should display the blank note error
     element should be visible    ${merchant_status_tm_notes_oth_error}
     capture page screenshot
+
+merchant status last updated date should be updated
+    element should be visible    ${merchant_status_updated_at_span}
+    ${curr_date}=    get current date    result_format=%B %d %Y
+    ${actual_date}=    get text    ${merchant_status_updated_at_span}
+    ${cleaned_date}=    get substring    ${actual_date}    start=14   end=-3
+    ${split_date}=    split string    ${cleaned_date}
+    ${split_curr_date}=    split string    ${curr_date}
+    ${cleaned_month}=    get substring    ${split_date[0]}   start=0    end=-1
+    ${cleaned_day}=    get substring    ${split_date[1]}   start=0    end=-1
+    should contain    ${split_curr_date[0]}    ${cleaned_month}
+    should be equal    ${split_curr_date[1]}    ${cleaned_day}
+    should be equal    ${split_curr_date[2]}    ${split_date[2]}

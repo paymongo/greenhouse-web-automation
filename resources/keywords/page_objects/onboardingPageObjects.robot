@@ -12,6 +12,7 @@ ${merchant_status_toggle_btn}    ${merchant_status_container}//button[contains(@
 ${merchant_status_span}    ${merchant_status_container}//span[contains(text(), 'Merchant')]
 ${merchant_status_tm_code}    ${merchant_status_container}//div//span[contains(@class, 'terminated-code-reason')]/parent::div/following-sibling::span
 ${merchant_status_notes}    ${merchant_status_container}//div/span[text()='Notes']/following-sibling::span
+${merchant_status_updated_at_span}    xpath=//span[contains(@class, 'merchant-status__last-updated-at')]
 
 ${merchant_status_modal_header}    xpath=//div[@class='ant-modal-content']//div[contains(text(), 'Are you sure you want to')]
 ${merchant_status_tm_selector_btn}    xpath=//div[contains(@class, 'terminated-code-options')]//button
