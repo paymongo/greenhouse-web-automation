@@ -10,4 +10,4 @@ Resource    ../environment_variables.robot
 Resource    ../resources/keywords/utilities/common.robot
 
 # Assertions
-Resource    ../resources/keywords/assertions/merchantsPage.robot
+Resource    ../resources/keywords/assertions/onboardingPage.robot
